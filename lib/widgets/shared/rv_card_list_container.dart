@@ -4,7 +4,6 @@ import 'package:revamp_flutter/widgets/shared/rv_card.dart';
 
 class RvCardListContainer extends StatelessWidget {
   final String title;
-  final double width;
   final double height;
   final Axis scrollDirection;
   final List<RvCard> cards;
@@ -13,7 +12,6 @@ class RvCardListContainer extends StatelessWidget {
   RvCardListContainer(
       {this.title,
       @required this.cards,
-      this.width = 160,
       this.height = 160,
       this.scrollDirection = Axis.vertical}) {
     populateChildren();
@@ -23,7 +21,7 @@ class RvCardListContainer extends StatelessWidget {
     if (title != null) {
       _children.add(
         Padding(
-          padding: RvEdgeInsets.heading,
+          padding: RvEdgeInsets.cardContent,
           child: Text(
             title,
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -34,8 +32,8 @@ class RvCardListContainer extends StatelessWidget {
 
     _children.add(
       Container(
-        height: this.width,
-        padding: RvEdgeInsets.heading,
+        height: this.height,
+        padding: RvEdgeInsets.cardListContainer,
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: cards,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:revamp_flutter/themes/default.dart';
+import 'package:revamp_flutter/widgets/shared/Card_header_with_text_headings.dart';
 import 'package:revamp_flutter/widgets/shared/rv_card.dart';
 import 'package:revamp_flutter/widgets/shared/rv_card_list_container.dart';
 
@@ -16,36 +17,45 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        margin: RvEdgeInsets.container,
-        child: ListView(
-          // This next line does the trick.
-          scrollDirection: Axis.vertical,
-          children: <Widget>[
-            RvCardListContainer(title: 'Revamp Requests', cards: [
+        body: Container(
+      margin: RvEdgeInsets.container,
+      child: ListView(
+        // This next line does the trick.
+        scrollDirection: Axis.vertical,
+        children: <Widget>[
+          RvCardListContainer(
+            title: 'Revamp Requests',
+            cards: [
               RvCard(
-                body: Text("Hello world"),
+                header: CardHeaderWithTextHeadings(
+                    heading: "Heading", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
               )
-            ]),
-            Container(
-              height: 160.0,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 160.0,
-              color: Colors.green,
-            ),
-            Container(
-              height: 160.0,
-              color: Colors.yellow,
-            ),
-            Container(
-              height: 160.0,
-              color: Colors.orange,
-            ),
-          ],
-        ),
+            ],
+          ),
+          Container(
+            height: 160.0,
+            color: Colors.blue,
+          ),
+          Container(
+            height: 160.0,
+            color: Colors.green,
+          ),
+          Container(
+            height: 160.0,
+            color: Colors.yellow,
+          ),
+          Container(
+            height: 160.0,
+            color: Colors.orange,
+          ),
+        ],
       ),
-    );
+    ));
   }
 }
