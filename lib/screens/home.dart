@@ -3,6 +3,7 @@ import 'package:revamp_flutter/themes/default.dart';
 
 import 'revamps_list.dart';
 import 'homepage.dart';
+import 'marketplace.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -13,6 +14,8 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     Homepage(),
+    RevampsListScreen(),
+    MarketplaceScreen(),
     RevampsListScreen(),
   ];
 
@@ -45,6 +48,10 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
             icon: Icon(Icons.recent_actors),
             title: Text('Revamps'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart),
+            title: Text('Market'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
