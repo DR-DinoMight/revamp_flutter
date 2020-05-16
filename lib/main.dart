@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './screens/homepage.dart';
+import './screens/home.dart';
 import 'themes/default.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class Revamp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: rvThemeData,
-      home: Homepage(title: 'Flutter Demo Home Page'),
+      home: Home(),
     );
   }
 }
