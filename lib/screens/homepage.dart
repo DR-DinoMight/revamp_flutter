@@ -26,11 +26,62 @@ class _HomepageState extends State<Homepage> {
             // This next line does the trick.
             scrollDirection: Axis.vertical,
             children: <Widget>[
-              RvCardListContainer(title: 'Revamp Requests', cards: [
-                RvCard(
-                  body: Text("Hello world"),
-                )
-              ]),
+              RvCardListContainer(
+                title: 'Revamp Requests',
+                cards: [
+                  RvCard(
+                    header: Container(
+                      color: RvColors.green,
+                      width: (MediaQuery.of(context).size.width *
+                          RvSizes.largeCardWidthPercent),
+                      child: Padding(
+                          padding: RvEdgeInsets.cardContent,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                "Heading",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  shadows: [
+                                    Shadow(
+                                      blurRadius:
+                                          RvSizes.headingShadowBlurRadius,
+                                      color: RvColors.headingShadow,
+                                      offset: RvOffsets.headingShadow,
+                                    ),
+                                  ],
+                                  color: RvColors.white,
+                                ),
+                              ),
+                              Text(
+                                "Subheading",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  shadows: [
+                                    Shadow(
+                                      blurRadius:
+                                          RvSizes.headingShadowBlurRadius,
+                                      color: RvColors.headingShadow,
+                                      offset: RvOffsets.headingShadow,
+                                    ),
+                                  ],
+                                  color: RvColors.white,
+                                ),
+                              ),
+                            ],
+                          )),
+                    ),
+                    body: Padding(
+                      padding: RvEdgeInsets.cardContent,
+                      child: Text(
+                        "Hello world SDSDSDSDSDSDSDDSD",
+                      ),
+                    ),
+                  )
+                ],
+              ),
               Container(
                 height: 160.0,
                 color: Colors.blue,
@@ -49,14 +100,24 @@ class _HomepageState extends State<Homepage> {
               ),
             ],
           ),
-        )
-
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: _incrementCounter,
-        //   tooltip: 'Increment',
-        //   child: Icon(Icons.add),
-        // ),
-
-        );
+        ));
   }
 }
+
+// class RvContainerBuilder {
+//   List<Widget> _children = [];
+
+//   RvContainerBuilder addContent(Widget child) {
+//     this._children.add(child);
+//     return this;
+//   }
+
+//   Container build(BuildContext context) {
+//     return new Container(
+//         color: Colors.green,
+//         child: ListView(
+//           scrollDirection: Axis.vertical,
+//           children: _children,
+//         ));
+//   }
+// }
