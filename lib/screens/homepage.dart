@@ -30,49 +30,7 @@ class _HomepageState extends State<Homepage> {
                 title: 'Revamp Requests',
                 cards: [
                   RvCard(
-                    header: Container(
-                      color: RvColors.green,
-                      width: (MediaQuery.of(context).size.width *
-                          RvSizes.largeCardWidthPercent),
-                      child: Padding(
-                          padding: RvEdgeInsets.cardContent,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Heading",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                  shadows: [
-                                    Shadow(
-                                      blurRadius:
-                                          RvSizes.headingShadowBlurRadius,
-                                      color: RvColors.headingShadow,
-                                      offset: RvOffsets.headingShadow,
-                                    ),
-                                  ],
-                                  color: RvColors.white,
-                                ),
-                              ),
-                              Text(
-                                "Subheading",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  shadows: [
-                                    Shadow(
-                                      blurRadius:
-                                          RvSizes.headingShadowBlurRadius,
-                                      color: RvColors.headingShadow,
-                                      offset: RvOffsets.headingShadow,
-                                    ),
-                                  ],
-                                  color: RvColors.white,
-                                ),
-                              ),
-                            ],
-                          )),
-                    ),
+                    header: CardHeaderWithTextHeadings(),
                     body: Padding(
                       padding: RvEdgeInsets.cardContent,
                       child: Text(
@@ -101,6 +59,61 @@ class _HomepageState extends State<Homepage> {
             ],
           ),
         ));
+  }
+}
+
+class CardHeaderWithTextHeadings extends StatelessWidget {
+  final String heading;
+  final String subHeading;
+
+  CardHeaderWithTextHeadings({
+    @required this.heading,
+    @required this.subHeading,
+  })
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: RvColors.green,
+      width:
+          (MediaQuery.of(context).size.width * RvSizes.largeCardWidthPercent),
+      child: Padding(
+          padding: RvEdgeInsets.cardContent,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                heading,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  shadows: [
+                    Shadow(
+                      blurRadius: RvSizes.headingShadowBlurRadius,
+                      color: RvColors.headingShadow,
+                      offset: RvOffsets.headingShadow,
+                    ),
+                  ],
+                  color: RvColors.white,
+                ),
+              ),
+              Text(
+                subHeading,
+                style: TextStyle(
+                  fontSize: 16,
+                  shadows: [
+                    Shadow(
+                      blurRadius: RvSizes.headingShadowBlurRadius,
+                      color: RvColors.headingShadow,
+                      offset: RvOffsets.headingShadow,
+                    ),
+                  ],
+                  color: RvColors.white,
+                ),
+              ),
+            ],
+          )),
+    );
   }
 }
 

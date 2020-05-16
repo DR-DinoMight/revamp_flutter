@@ -32,7 +32,7 @@ class RvColors {
 class RvEdgeInsets {
   static const EdgeInsets container = EdgeInsets.fromLTRB(20, 20, 20, 10);
   static const EdgeInsets cardListContainer = EdgeInsets.only(bottom: 20);
-  static const EdgeInsets heading = EdgeInsets.fromLTRB(10, 10, 10, 10);
+  static const EdgeInsets cardContent = EdgeInsets.fromLTRB(10, 10, 10, 10);
   static const EdgeInsets none = EdgeInsets.zero;
 }
 

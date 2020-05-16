@@ -21,7 +21,7 @@ class RvCardListContainer extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
-            padding: RvEdgeInsets.heading,
+            padding: RvEdgeInsets.cardContent,
             child: Text(
               title,
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
