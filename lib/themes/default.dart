@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-final ThemeData companyThemeData = new ThemeData(
+final ThemeData rvThemeData = new ThemeData(
   brightness: Brightness.light,
-  primaryColor: CompanyColors.white,
-  accentColor: CompanyColors.green,
-  canvasColor: CompanyColors.grey[100],
+  primaryColor: RvColors.white,
+  accentColor: RvColors.green,
+  canvasColor: RvColors.grey[100],
 
   // This makes the visual density adapt to the platform that you run
   // the app on. For desktop platforms, the controls will be smaller and
@@ -12,8 +12,8 @@ final ThemeData companyThemeData = new ThemeData(
   visualDensity: VisualDensity.adaptivePlatformDensity,
 );
 
-class CompanyColors {
-  CompanyColors._(); // this basically makes it so you can instantiate this class
+class RvColors {
+  RvColors._(); // this basically makes it so you can instantiate this class
 
   static const Color white = Colors.white;
   static const MaterialColor grey = Colors.grey;
@@ -27,4 +27,15 @@ class CompanyColors {
       400: const Color(0xFF003200),
     },
   );
+}
+
+class RvEdgeInsets {
+  static const EdgeInsets container = EdgeInsets.fromLTRB(20, 20, 20, 10);
+  static const EdgeInsets heading = EdgeInsets.only(bottom: 20);
+}
+
+class RvCardSizes {
+  static const large = {'height': 20, 'width': 20};
+  static const medium = {'height': 20, 'width': 20};
+  static const small = {'height': 20, 'width': 20};
 }

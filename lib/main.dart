@@ -12,7 +12,7 @@ class Revamp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: CompanyThemeData,
+      theme: rvThemeData,
       home: Homepage(title: 'Flutter Demo Home Page'),
     );
   }

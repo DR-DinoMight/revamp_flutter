@@ -10,7 +10,7 @@ class RvBottomNavBar extends StatelessWidget {
     return BottomNavigationBar(
       currentIndex: activeButtonIndex,
       selectedItemColor: Theme.of(context).accentColor,
-      unselectedItemColor: CompanyColors.grey[800],
+      unselectedItemColor: RvColors.grey[800],
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
