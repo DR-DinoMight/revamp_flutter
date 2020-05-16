@@ -33,27 +33,84 @@ class _ItemScreenState extends State<ItemScreen> {
               body: Center(
                 child: Column(
                   children: <Widget>[
-                    Row(
-                      children: [
-                        FlatButton(
-                          child: Icon(
+                    Center(
+                      child: Wrap(
+                        children: [
+                          Icon(
                             _icon,
                             color: Colors.yellow,
                           ),
-                          onPressed: () {
-                            toggleIcons();
-                          },
-                          padding: EdgeInsets.only(right: 0),
-                        ),
-                        Text('20K'),
-                        Text(
-                          ' Love this',
-                          style: TextStyle(color: Colors.red[900]),
-                        )
-                      ],
+                          Text('20K'),
+                          Text(
+                            ' Love this',
+                            style: TextStyle(color: Colors.red[900]),
+                          )
+                        ],
+                      ),
+                    ),
+                    Center(
+                      child: Wrap(
+                        children: [
+                          Text(
+                            'Current Bid',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: RvColors.green,
+                            ),
+                          ),
+                          Text(" \$10 "),
+                          Icon(Icons.shopping_basket)
+                        ],
+                      ),
                     ),
                   ],
                 ),
+              ),
+              footer: Center(
+                child: Wrap(children: <Widget>[
+                  RaisedButton(
+                    child: Wrap(
+                      children: [
+                        Text("Buy Now",
+                            style: TextStyle(color: RvColors.white)),
+                        Text(
+                          " \$10",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: RvColors.white),
+                        )
+                      ],
+                    ),
+                    color: RvColors.green,
+                    onPressed: () {
+                      print('hello');
+                    },
+                  ),
+                  Padding(
+                    child: Text(
+                      " Or ",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 15),
+                  ),
+                  RaisedButton(
+                      child: Wrap(
+                        children: [
+                          Text("Buy Now",
+                              style: TextStyle(color: RvColors.white)),
+                          Text(
+                            " \$10",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: RvColors.white),
+                          )
+                        ],
+                      ),
+                      color: RvColors.green,
+                      onPressed: () {
+                        print('hello');
+                      }),
+                ]),
               ),
             )
           ],
