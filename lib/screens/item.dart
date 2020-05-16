@@ -3,6 +3,8 @@ import 'package:revamp_flutter/themes/default.dart';
 import 'package:revamp_flutter/widgets/shared/rv_card.dart';
 import 'package:revamp_flutter/widgets/shared/rv_card_list_container.dart';
 
+import 'marketplace/bid.dart';
+
 class ItemScreen extends StatefulWidget {
   final String title;
 
@@ -96,19 +98,12 @@ class _ItemScreenState extends State<ItemScreen> {
                   RaisedButton(
                       child: Wrap(
                         children: [
-                          Text("Buy Now",
-                              style: TextStyle(color: RvColors.white)),
-                          Text(
-                            " \$10",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: RvColors.white),
-                          )
+                          Text("Bid", style: TextStyle(color: RvColors.white)),
                         ],
                       ),
                       color: RvColors.green,
                       onPressed: () {
-                        print('hello');
+                        showFancyCustomDialog(context);
                       }),
                 ]),
               ),
