@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:revamp_flutter/themes/default.dart';
 
 class RvCard extends StatelessWidget {
   final List<Widget> _children = [];
