@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:revamp_flutter/widgets/shared/rv_app_bar.dart';
+import 'package:revamp_flutter/widgets/shared/rv_bottom_nav_bar.dart';
 
 class Homepage extends StatefulWidget {
   Homepage({Key key, this.title}) : super(key: key);
@@ -41,14 +43,10 @@ class _HomepageState extends State<Homepage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the Homepage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Image(
-          image: AssetImage('assets/images/Revamp.png'),
-          fit: BoxFit.cover,
-        ),
-      ),
+      appBar: new RvAppBar(),
+
+      bottomNavigationBar: new RvBottomNavBar(0),
+
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
