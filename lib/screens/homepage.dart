@@ -44,7 +44,13 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         // Here we take the value from the Homepage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+
+//Image(image: AssetImage('graphics/background.png'));
+
+        title: Image(
+          image: AssetImage('assets/images/Revamp.png'),
+          fit: BoxFit.cover,
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
