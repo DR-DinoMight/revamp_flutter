@@ -28,6 +28,7 @@ class _MarketplaceScreenState extends State<MarketplaceScreen> {
               title: 'Recently posted items',
               cards: [
                 RvCard(
+                  size: RvCardSize.large,
                   body: RaisedButton(
                     onPressed: () {
                       Navigator.push(
@@ -44,6 +45,7 @@ class _MarketplaceScreenState extends State<MarketplaceScreen> {
               title: 'Things we think you\'ll like',
               cards: [
                 RvCard(
+                  size: RvCardSize.large,
                   body: RaisedButton(
                     onPressed: () {
                       Navigator.push(

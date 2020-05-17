@@ -27,32 +27,117 @@ class _HomepageState extends State<Homepage> {
             title: 'Revamp Requests',
             cards: [
               RvCard(
-                header: CardHeaderWithTextHeadings(
-                    heading: "Heading", subHeading: "Subheading"),
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "An ugly old chair", subHeading: "24 minutes ago"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "This chair is so ugly! I hate it. Let's do something new with it!",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "A 70's style floural dress",
+                    subHeading: "three hours ago"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Back in the 70’s this was the height of fashion. I’d love to see this dress restored to its former glory.",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "An old garden table", subHeading: "one week ago"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
                     "Hello world SDSDSDSDSDSDSDDSD",
                   ),
                 ),
-              )
+              ),
             ],
           ),
-          Container(
-            height: 160.0,
-            color: Colors.blue,
+          RvCardListContainer(
+            title: 'New Revamps',
+            cards: [
+              RvCard(
+                size: RvCardSize.small,
+                header: CardHeaderText(
+                    heading: "Snazzy Chair", subHeading: "Just now"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "You know you love it!",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.small,
+                header: CardHeaderText(
+                    heading: "Wood sculpture", subHeading: "2 days ago"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Small cards don't have much space",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.small,
+                header: CardHeaderText(
+                    heading: "USB Desk Fan", subHeading: "3 days ago"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "I'm running out of ideas",
+                  ),
+                ),
+              ),
+            ],
           ),
-          Container(
-            height: 160.0,
-            color: Colors.green,
-          ),
-          Container(
-            height: 160.0,
-            color: Colors.yellow,
-          ),
-          Container(
-            height: 160.0,
-            color: Colors.orange,
+          RvCardListContainer(
+            title: 'Latest Stories',
+            cards: [
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "From old pallet to garden furnature",
+                    subHeading: "2 weeks ago"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "Heading2", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "Heading3", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

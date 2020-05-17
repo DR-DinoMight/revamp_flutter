@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:revamp_flutter/themes/default.dart';
 import 'package:revamp_flutter/widgets/shared/rv_card.dart';
-import 'package:revamp_flutter/widgets/shared/rv_card_list_container.dart';
+import 'package:revamp_flutter/themes/default.dart';
 
 class ItemScreen extends StatefulWidget {
   final String title;
@@ -30,6 +29,7 @@ class _ItemScreenState extends State<ItemScreen> {
         body: Column(
           children: <Widget>[
             RvCard(
+              size: RvCardSize.large,
               body: Center(
                 child: Column(
                   children: <Widget>[

@@ -27,6 +27,10 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    // runtime calculations done here.
+    RuntimeCalculatedValues.instance.screenWidth =
+        MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         title: Image(

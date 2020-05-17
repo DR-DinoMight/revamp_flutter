@@ -31,7 +31,7 @@ class RvColors {
 
 class RvEdgeInsets {
   static const EdgeInsets container = EdgeInsets.fromLTRB(20, 20, 20, 10);
-  static const EdgeInsets cardListContainer = EdgeInsets.only(bottom: 20);
+  static const EdgeInsets cardListContainer = EdgeInsets.zero;
   static const EdgeInsets cardContent = EdgeInsets.fromLTRB(10, 10, 10, 10);
   static const EdgeInsets none = EdgeInsets.zero;
 }
@@ -40,24 +40,23 @@ class RvOffsets {
   static const headingShadow = Offset(4.0, 4.0);
 }
 
-class RvSizes {
+class RvSizingValues {
+  // Todo perhaps move all shadows properties into their own class.
   static const headingShadowBlurRadius = 10.0;
-  static const largeCardWidthPercent = .85;
+  static const largeCardWidthFraction = .85;
+  static const mediumCardWidthFraction = largeCardWidthFraction * .75;
+  static const smallCardWidthFraction = largeCardWidthFraction * .5;
 }
 
-// !TODO Delete
-// class RvCardWidths {
-//   final BuildContext context;
+enum RvCardSize { large, medium, small }
 
-//   double large;
-//   double medium;
-//   double small;
+class RuntimeCalculatedValues {
+  //simple singleton instance.
+  static RuntimeCalculatedValues instance = new RuntimeCalculatedValues._();
 
-//   RvCardWidths.fromContext(
-//     this.context,
-//   ) {
-//     large = MediaQuery.of(context).size.width * 1;
-//     medium = MediaQuery.of(context).size.width * .5;
-//     small = MediaQuery.of(context).size.width * .25;
-//   }
-// }
+  // private constructor for internal use only
+  RuntimeCalculatedValues._();
+
+  // properties
+  double screenWidth;
+}
