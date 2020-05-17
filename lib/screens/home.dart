@@ -3,7 +3,7 @@ import 'package:revamp_flutter/themes/default.dart';
 
 import 'revamps_list.dart';
 import 'homepage.dart';
-import 'marketplace.dart';
+import 'marketplace/marketplace.dart';
 
 class Home extends StatefulWidget {
   @override
