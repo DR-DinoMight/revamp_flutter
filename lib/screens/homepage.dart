@@ -29,7 +29,9 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "An ugly old chair", subHeading: "24 minutes ago"),
+                  heading: "An ugly old chair",
+                  subHeading: "24 minutes ago",
+                ),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
@@ -52,7 +54,9 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "An old garden table", subHeading: "one week ago"),
+                  heading: "An old garden table",
+                  subHeading: "one week ago",
+                ),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
@@ -68,7 +72,9 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.small,
                 header: CardHeaderText(
-                    heading: "Snazzy Chair", subHeading: "Just now"),
+                  heading: "Snazzy Chair",
+                  subHeading: "Just now",
+                ),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
@@ -79,7 +85,9 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.small,
                 header: CardHeaderText(
-                    heading: "Wood sculpture", subHeading: "2 days ago"),
+                  heading: "Wood sculpture",
+                  subHeading: "2 days ago",
+                ),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
@@ -90,7 +98,9 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.small,
                 header: CardHeaderText(
-                    heading: "USB Desk Fan", subHeading: "3 days ago"),
+                  heading: "USB Desk Fan",
+                  subHeading: "3 days ago",
+                ),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
@@ -118,7 +128,9 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "Heading2", subHeading: "Subheading"),
+                  heading: "Heading2",
+                  subHeading: "Subheading",
+                ),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
@@ -129,7 +141,9 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "Heading3", subHeading: "Subheading"),
+                  heading: "Heading3",
+                  subHeading: "Subheading",
+                ),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
