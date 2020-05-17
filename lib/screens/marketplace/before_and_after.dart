@@ -15,7 +15,7 @@ class BeforeAndAfter extends StatelessWidget {
             height: 200,
           ),
           footer: Container(
-            height: 30,
+            height: 50,
           ),
         ),
         RvCard(
@@ -26,7 +26,7 @@ class BeforeAndAfter extends StatelessWidget {
             height: 200,
           ),
           footer: Container(
-            height: 30,
+            height: 50,
             width: MediaQuery.of(context).size.width * 0.47,
             child: Row(
               children: [
