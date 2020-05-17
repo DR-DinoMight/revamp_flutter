@@ -27,7 +27,8 @@ class _HomepageState extends State<Homepage> {
             title: 'Revamp Requests',
             cards: [
               RvCard(
-                header: CardHeaderWithTextHeadings(
+                size: RvCardSize.large,
+                header: CardHeaderText(
                     heading: "Heading", subHeading: "Subheading"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
@@ -35,24 +36,106 @@ class _HomepageState extends State<Homepage> {
                     "Hello world SDSDSDSDSDSDSDDSD",
                   ),
                 ),
-              )
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "Heading2", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "Heading3", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
             ],
           ),
-          Container(
-            height: 160.0,
-            color: Colors.blue,
+          RvCardListContainer(
+            title: 'New Revamps',
+            cards: [
+              RvCard(
+                size: RvCardSize.small,
+                header: CardHeaderText(
+                    heading: "Heading", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.small,
+                header: CardHeaderText(
+                    heading: "Heading2", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.small,
+                header: CardHeaderText(
+                    heading: "Heading3", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+            ],
           ),
-          Container(
-            height: 160.0,
-            color: Colors.green,
-          ),
-          Container(
-            height: 160.0,
-            color: Colors.yellow,
-          ),
-          Container(
-            height: 160.0,
-            color: Colors.orange,
+          RvCardListContainer(
+            title: 'Large Catalogue Menu',
+            cards: [
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "Heading", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "Heading2", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+              RvCard(
+                size: RvCardSize.large,
+                header: CardHeaderText(
+                    heading: "Heading3", subHeading: "Subheading"),
+                body: Padding(
+                  padding: RvEdgeInsets.cardContent,
+                  child: Text(
+                    "Hello world SDSDSDSDSDSDSDDSD",
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

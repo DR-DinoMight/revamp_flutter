@@ -21,11 +21,14 @@ class _RevampScreenState extends State<RevampScreen> {
       ),
       body: Container(
         margin: RvEdgeInsets.container,
-        child: RvCardListContainer(cards: [
-          RvCard(
-            body: Text("Hello world"),
-          )
-        ]),
+        child: RvCardListContainer(
+          cards: [
+            RvCard(
+              size: RvCardSize.large,
+              body: Text("Hello world"),
+            )
+          ],
+        ),
       ),
     );
   }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:revamp_flutter/themes/default.dart';
 
-class CardHeaderWithTextHeadings extends StatelessWidget {
+class CardHeaderText extends StatelessWidget {
   final String heading;
   final String subHeading;
 
-  CardHeaderWithTextHeadings({
+  CardHeaderText({
     @required this.heading,
     @required this.subHeading,
   });
@@ -14,8 +14,8 @@ class CardHeaderWithTextHeadings extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: RvColors.green,
-      width:
-          (MediaQuery.of(context).size.width * RvSizes.largeCardWidthPercent),
+      width: (MediaQuery.of(context).size.width *
+          RvSizingValues.largeCardWidthFraction),
       child: Padding(
           padding: RvEdgeInsets.cardContent,
           child: Column(
@@ -28,7 +28,7 @@ class CardHeaderWithTextHeadings extends StatelessWidget {
                   fontSize: 20,
                   shadows: [
                     Shadow(
-                      blurRadius: RvSizes.headingShadowBlurRadius,
+                      blurRadius: RvSizingValues.headingShadowBlurRadius,
                       color: RvColors.headingShadow,
                       offset: RvOffsets.headingShadow,
                     ),
@@ -42,7 +42,7 @@ class CardHeaderWithTextHeadings extends StatelessWidget {
                   fontSize: 16,
                   shadows: [
                     Shadow(
-                      blurRadius: RvSizes.headingShadowBlurRadius,
+                      blurRadius: RvSizingValues.headingShadowBlurRadius,
                       color: RvColors.headingShadow,
                       offset: RvOffsets.headingShadow,
                     ),

@@ -22,6 +22,7 @@ class _RevampsListScreenState extends State<RevampsListScreen> {
         margin: RvEdgeInsets.container,
         child: RvCardListContainer(title: 'Your Revamps', cards: [
           RvCard(
+            size: RvCardSize.large,
             body: RaisedButton(
               onPressed: () {
                 Navigator.push(
