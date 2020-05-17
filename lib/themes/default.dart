@@ -41,16 +41,11 @@ class RvOffsets {
 }
 
 class RvSizingValues {
+  // Todo perhaps move all shadows properties into their own class.
   static const headingShadowBlurRadius = 10.0;
-
   static const largeCardWidthFraction = .85;
-  static const largeCardHeightFraction = .85;
-
   static const mediumCardWidthFraction = largeCardWidthFraction * .75;
-  static const mediumCardHeightFraction = largeCardHeightFraction;
-
   static const smallCardWidthFraction = largeCardWidthFraction * .5;
-  static const smallCardHeightFraction = largeCardHeightFraction;
 }
 
 enum RvCardSize { large, medium, small }

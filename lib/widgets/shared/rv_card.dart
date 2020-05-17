@@ -19,36 +19,32 @@ class RvCard extends StatelessWidget {
     if (footer != null) _children.add(footer);
   }
 
-  Size calculateCardSizes(RvCardSize size) {
+  double calculateCardWidths(RvCardSize size) {
     var screenWidth = RuntimeCalculatedValues.instance.screenWidth;
 
     var width = 0.0;
-    var height = 0.0;
 
     switch (size) {
       case RvCardSize.large:
         width = RvSizingValues.largeCardWidthFraction * screenWidth;
-        height = RvSizingValues.largeCardHeightFraction * screenWidth;
         break;
       case RvCardSize.medium:
         width = RvSizingValues.mediumCardWidthFraction * screenWidth;
-        height = RvSizingValues.mediumCardHeightFraction * screenWidth;
         break;
       case RvCardSize.small:
         width = RvSizingValues.smallCardWidthFraction * screenWidth;
-        height = RvSizingValues.smallCardWidthFraction * screenWidth;
         break;
     }
 
-    return new Size(width, height);
+    return width;
   }
 
   @override
   Widget build(BuildContext context) {
-    Size cardSize = calculateCardSizes(size);
+    double cardWidth = calculateCardWidths(size);
 
     return Container(
-        width: cardSize.width,
+        width: cardWidth,
         child: Card(
           child: Column(
               mainAxisSize: MainAxisSize.min,
