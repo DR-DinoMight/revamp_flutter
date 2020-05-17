@@ -29,29 +29,30 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "Heading", subHeading: "Subheading"),
+                    heading: "An ugly old chair", subHeading: "24 minutes ago"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
-                    "Hello world SDSDSDSDSDSDSDDSD",
+                    "This chair is so ugly! I hate it. Let's do something new with it!",
                   ),
                 ),
               ),
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "Heading2", subHeading: "Subheading"),
+                    heading: "A 70's style floural dress",
+                    subHeading: "three hours ago"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
-                    "Hello world SDSDSDSDSDSDSDDSD",
+                    "Back in the 70’s this was the height of fashion. I’d love to see this dress restored to its former glory.",
                   ),
                 ),
               ),
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "Heading3", subHeading: "Subheading"),
+                    heading: "An old garden table", subHeading: "one week ago"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
@@ -67,45 +68,46 @@ class _HomepageState extends State<Homepage> {
               RvCard(
                 size: RvCardSize.small,
                 header: CardHeaderText(
-                    heading: "Heading", subHeading: "Subheading"),
+                    heading: "Snazzy Chair", subHeading: "Just now"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
-                    "Hello world SDSDSDSDSDSDSDDSD",
+                    "You know you love it!",
                   ),
                 ),
               ),
               RvCard(
                 size: RvCardSize.small,
                 header: CardHeaderText(
-                    heading: "Heading2", subHeading: "Subheading"),
+                    heading: "Wood sculpture", subHeading: "2 days ago"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
-                    "Hello world SDSDSDSDSDSDSDDSD",
+                    "Small cards don't have much space",
                   ),
                 ),
               ),
               RvCard(
                 size: RvCardSize.small,
                 header: CardHeaderText(
-                    heading: "Heading3", subHeading: "Subheading"),
+                    heading: "USB Desk Fan", subHeading: "3 days ago"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
-                    "Hello world SDSDSDSDSDSDSDDSD",
+                    "I'm running out of ideas",
                   ),
                 ),
               ),
             ],
           ),
           RvCardListContainer(
-            title: 'Large Catalogue Menu',
+            title: 'Latest Stories',
             cards: [
               RvCard(
                 size: RvCardSize.large,
                 header: CardHeaderText(
-                    heading: "Heading", subHeading: "Subheading"),
+                    heading: "From old pallet to garden furnature",
+                    subHeading: "2 weeks ago"),
                 body: Padding(
                   padding: RvEdgeInsets.cardContent,
                   child: Text(
